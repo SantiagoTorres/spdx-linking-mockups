@@ -16,7 +16,7 @@ generate this one.
 </text>
 
 Relationship: SPDXRef-Document DESCRIBES SPDXRef-2622e6cca7-nginx-1.19.0
-Relationship: SPDXRef-Document DEPENDENCY_MANIFEST_OF DocumentRef-13cb14c2acd34e45446a50af25cb05095a17624678dbafbcc9e26086547c1d74 nginx@sha256:21f32f6c08406306d822a0e6e8b7dc81f53f336570e852e25fbe1e3e3d0d0133
+ExternalDocumentRef: DocumentRef-13cb14c2acd34e45446a50af25cb05095a17624678dbafbcc9e26086547c1d74 nginx@sha256:21f32f6c08406306d822a0e6e8b7dc81f53f336570e852e25fbe1e3e3d0d0133
 Relationship: SPDXRef-Document DEPENDENCY_MANIFEST_OF <external doc ref for SPDXRef-d4cf327d8e>
 Relationship: SPDXRef-Document DEPENDENCY_MANIFEST_OF <external doc ref for SPDXRef-7c7d7f4461>
 Relationship: SPDXRef-Document DEPENDENCY_MANIFEST_OF <external doc ref for SPDXRef-9040af41bb>
@@ -32,6 +32,8 @@ PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
 
 Relationship: SPDXRef-2622e6cca7-nginx-1.19.0 CONTAINS SPDXRef-13cb14c2ac
+Relationship: DocumentRef-13cb14c2acd34e45446a50af25cb05095a17624678dbafbcc9e26086547c1d74:SPDXRef-
+
 Relationship: SPDXRef-2622e6cca7-nginx-1.19.0 CONTAINS SPDXRef-d4cf327d8e
 Relationship: SPDXRef-2622e6cca7-nginx-1.19.0 CONTAINS SPDXRef-7c7d7f4461
 Relationship: SPDXRef-2622e6cca7-nginx-1.19.0 CONTAINS SPDXRef-9040af41bb
