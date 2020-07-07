@@ -32,8 +32,7 @@ PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
 
 Relationship: SPDXRef-2622e6cca7-nginx-1.19.0 CONTAINS SPDXRef-13cb14c2ac
-Relationship: DocumentRef-13cb14c2acd34e45446a50af25cb05095a17624678dbafbcc9e26086547c1d74:SPDXRef-
-
+Relationship: DocumentRef-13cb14c2acd34e45446a50af25cb05095a17624678dbafbcc9e26086547c1d74:SPDXRef-13cb14c2ac
 Relationship: SPDXRef-2622e6cca7-nginx-1.19.0 CONTAINS SPDXRef-d4cf327d8e
 Relationship: SPDXRef-2622e6cca7-nginx-1.19.0 CONTAINS SPDXRef-7c7d7f4461
 Relationship: SPDXRef-2622e6cca7-nginx-1.19.0 CONTAINS SPDXRef-9040af41bb
