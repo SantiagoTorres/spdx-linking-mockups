@@ -1,0 +1,138 @@
+SPDXVersion: SPDX-3.0
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: SBoM for layer 1 from nginx@sha256:21f32f6c08406306d822a0e6e8b7dc81f53f336570e852e25fbe1e3e3d0d0133
+DocumentNamespace: pkg:container/nginx@sha256:21f32f6c08406306d822a0e6e8b7dc81f53f336570e852e25fbe1e3e3d0d0133
+LicenseListVersion: 3.8
+Creator: Tool: tern-2.1.1
+Created: 2020-07-06T23:49:08Z
+DocumentComment:
+<text>
+This is the document describing layer 1 of the container image.
+This layer is typically an OS.
+There could be a external document references to each of the packages.
+</text>
+ExternalDocumentRef: DocumentRef-13cb14c2acd34e45446a50af25cb05095a17624678dbafbcc9e26086547c1d74 nginx@sha256:21f32f6c08406306d822a0e6e8b7dc81f53f336570e852e25fbe1e3e3d0d0133
+
+PackageName: layer.tar
+SPDXID: SPDXRef-13cb14c2ac
+PackageFileName: 2da8497030750d425d1448369d20a56fec5ceadd11ee0898f63bf260c4adb97a/layer.tar
+PackageDownloadLocation: 2da8497030750d425d1448369d20a56fec5ceadd11ee0898f63bf260c4adb97a/layer.tar
+FilesAnalyzed: false
+PackageChecksum: SHA256: 13cb14c2acd34e45446a50af25cb05095a17624678dbafbcc9e26086547c1d74
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageComment: <text>
+Layer: f46b202087:
+	info: Found 'Debian GNU/Linux 10 (buster)' in /etc/os-release.
+	info: Layer created by commands: /bin/sh -c #(nop) ADD file:4d35f6c8bbbe6801cc5f44989730fb6d349a644ecb36eca481e7df25842d6321 in / 
+	info: Retrieved by invoking listing in command_lib/base.yml
+
+copyrights:
+	in container:
+	pkgs=`dpkg --get-selections | cut -f1 -d':' | awk '{print $1}'`
+	for p in $pkgs; do /bin/cat /usr/share/doc/$p/copyright; echo LICF; done
+
+names:
+	in container:
+	dpkg --get-selections | cut -f1 -d':' | awk '{print $1}'
+
+versions:
+	in container:
+	pkgs=`dpkg --get-selections | cut -f1 -d':' | awk '{print $1}'`
+	for p in $pkgs; do dpkg -l $p | awk 'NR>5 {print $3}'; done
+
+
+
+Invoking commands from command_lib/base.yml:
+	warning: No listing method for 'licenses'. Additional analysis may be required.
+No listing method for 'srcs'. Additional analysis may be required.
+
+
+</text>
+
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-adduser-3.118
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-apt-1.8.2.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-base-files-10.3+deb10u4
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-base-passwd-3.5.46
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-bash-5.0-4
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-bsdutils-1-2.33.1-0.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-coreutils-8.30-3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-dash-0.5.10.2-5
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-debconf-1.5.71
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-debian-archive-keyring-2019.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-debianutils-4.8.6.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-diffutils-1-3.7-3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-dpkg-1.19.7
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-e2fsprogs-1.44.5-1+deb10u3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-fdisk-2.33.1-0.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-findutils-4.6.0+git+20190209-2
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-gcc-8-base-8.3.0-6
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-gpgv-2.2.12-1+deb10u1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-grep-3.3-1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-gzip-1.9-3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-hostname-3.21
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-init-system-helpers-1.56+nmu1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libacl1-2.2.53-4
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libapt-pkg5.0-1.8.2.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libattr1-1-2.4.48-4
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libaudit-common-1-2.8.4-3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libaudit1-1-2.8.4-3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libblkid1-2.33.1-0.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libbz2-1.0-1.0.6-9.2~deb10u1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libc-bin-2.28-10
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libc6-2.28-10
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libcap-ng0-0.7.9-2
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libcom-err2-1.44.5-1+deb10u3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libdb5.3-5.3.28+dfsg1-0.5
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libdebconfclient0-0.249
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libext2fs2-1.44.5-1+deb10u3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libfdisk1-2.33.1-0.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libffi6-3.2.1-9
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libgcc1-1-8.3.0-6
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libgcrypt20-1.8.4-5
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libgmp10-2-6.1.2+dfsg-4
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libgnutls30-3.6.7-4+deb10u4
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libgpg-error0-1.35-1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libhogweed4-3.4.1-1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libidn2-0-2.0.5-1+deb10u1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-liblz4-1-1.8.3-1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-liblzma5-5.2.4-1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libmount1-2.33.1-0.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libncursesw6-6.1+20181013-2+deb10u2
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libnettle6-3.4.1-1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libp11-kit0-0.23.15-2
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libpam-modules-1.3.1-5
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libpam-modules-bin-1.3.1-5
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libpam-runtime-1.3.1-5
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libpam0g-1.3.1-5
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libpcre3-2-8.39-12
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libseccomp2-2.3.3-4
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libselinux1-2.8-1+b1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libsemanage-common-2.8-2
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libsemanage1-2.8-2
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libsepol1-2.8-1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libsmartcols1-2.33.1-0.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libss2-1.44.5-1+deb10u3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libstdc++6-8.3.0-6
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libsystemd0-241-7~deb10u4
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libtasn1-6-4.13-3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libtinfo6-6.1+20181013-2+deb10u2
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libudev1-241-7~deb10u4
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libunistring2-0.9.10-1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libuuid1-2.33.1-0.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-libzstd1-1.3.8+dfsg-3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-login-1-4.5-1.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-mawk-1.3.3-17+b3
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-mount-2.33.1-0.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-ncurses-base-6.1+20181013-2+deb10u2
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-ncurses-bin-6.1+20181013-2+deb10u2
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-passwd-1-4.5-1.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-perl-base-5.28.1-6
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-sed-4.7-1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-sysvinit-utils-2.93-8
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-tar-1.30+dfsg-6
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-tzdata-2020a-0+deb10u1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-util-linux-2.33.1-0.1
+Relationship: SPDXRef-13cb14c2ac CONTAINS SPDXRef-zlib1g-1-1.2.11.dfsg-1
