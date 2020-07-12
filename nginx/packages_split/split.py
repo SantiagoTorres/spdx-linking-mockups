@@ -33,7 +33,7 @@ toplevel_name = serialize_document(toplevel)
 
 print("Toplevel is saved at spdx_docs/" + toplevel_name)
 
-for chunk in data.split("PackageName"):
+for chunk in chunks:
     # we are instantiating a string here for each chunk, we could be smarter
     # if we did something else rather than split (like tokenization)
     name = serialize_document("PackageName" + chunk)
