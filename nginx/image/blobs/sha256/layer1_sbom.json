@@ -1,0 +1,31 @@
+{
+  "SPDXVersion": "SPDX-2.2",
+  "DataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "DocumentName": "SBoM for layer 1 from nginx:1.19.0",
+  "DocumentNamespace": "https://https://index.docker.io/v2/library/nginx/blobs/",
+  "LicenseListVersion": 3.8,
+  "Creator":
+    {
+      "Tool": "tool"
+    },
+  "Created": "2020-07-06T23:49:08Z",
+  "DocumentComment": "Debian GNU/Linux 10 (buster)",
+  "Packages": [
+    {
+      "PackageName": "8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df",
+      "SPDXID": "SPDXRef-8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df",
+      "PackageFileName": "8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df",
+      "PackageDownloadLocation": "https://index.docker.io/v2/library/nginx/blobs/8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df",
+      "FilesAnalyzed": "false",
+      "PackageChecksum": [
+        {
+	  "SHA256": "8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df"
+	}
+      ],
+      "PackageLicenseDeclared": "NOASSERTION",
+      "PackageLicenseConcluded": "NOASSERTION",
+      "PackageCopyrightText": "NOASSERTION"
+    }
+  ]
+}

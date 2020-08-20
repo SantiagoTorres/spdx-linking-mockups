@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "mediaType": "application/org.spdx.sbom.manifest.v2+json",
+  "config": {
+    "mediaType": "application/org.spdx.sbom.config.v2.2+json",
+    "size": 7510,
+    "digest": "sha256:2622e6cca7ebbb6e310743abce3fc47335393e79171b9d76ba9d4f446ce7b163"
+  },
+  "layers": [
+    {
+      "mediaType": "application/json",
+      "size": 27098265,
+      "digest": "sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df"
+    },
+    {
+      "mediaType": "application/json",
+      "size": 26212264,
+      "digest": "sha256:8d69e59170f7dac013ef436408ed9ddc688dd9ad3bc030bd868add55a77e25f8"
+    }
+  ]
+}
