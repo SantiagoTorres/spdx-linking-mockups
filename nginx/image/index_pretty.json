@@ -12,8 +12,8 @@
     {
       "digest": "sha256:",
       "mediaType": "application/vnd.tool.manifest.v2+json",
-      "size":
-    }
+      "size": 1
+    },
     {
       "digest": "sha256:1fbcb4fdaf707a94fb561e6d6ff8c46f0f7f29ef26094876edb9c91a859cf71d",
       "mediaType": "application/vnd.docker.distribution.manifest.v2+json",

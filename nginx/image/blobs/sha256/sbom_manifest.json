@@ -9,13 +9,13 @@
   "layers": [
     {
       "mediaType": "application/json",
-      "size": 27098265,
-      "digest": "sha256:8559a31e96f442f2c7b6da49d6c84705f98a39d8be10b3f5f14821d0ee8417df"
+      "size": 984,
+      "digest": "sha256:54d1c2ead7c970dd7f4a6c8a748b27be97c40d8ec30f0a26116e181ea4737423"
     },
     {
       "mediaType": "application/json",
-      "size": 26212264,
-      "digest": "sha256:8d69e59170f7dac013ef436408ed9ddc688dd9ad3bc030bd868add55a77e25f8"
+      "size": 983,
+      "digest": "sha256:445247b16e4d91f45b0cc0e7b009370e130492112fdd4fe998db58408024336f"
     }
   ]
 }
