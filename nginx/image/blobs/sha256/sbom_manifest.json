@@ -3,8 +3,8 @@
   "mediaType": "application/org.spdx.sbom.manifest.v2+json",
   "config": {
     "mediaType": "application/org.spdx.sbom.config.v2.2+json",
-    "size": 7510,
-    "digest": "sha256:2622e6cca7ebbb6e310743abce3fc47335393e79171b9d76ba9d4f446ce7b163"
+    "size": 913,
+    "digest": "sha256:b57997e17704f80028568f882875fd45ac2954ef760bdc37c7895b135b92ba92"
   },
   "layers": [
     {

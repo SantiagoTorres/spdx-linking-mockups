@@ -1,0 +1,29 @@
+{
+	"SPDXVersion": "SPDX-2.2",
+	"DataLicense": "CC0-1.0",
+	"SPDXID": "SPDXRef-DOCUMENT",
+	"DocumentName": "SBoM for nginx@sha256:0efad4d09a419dc6d574c3c3baacb804a530acd61d5eba72cb1f14e1f5ac0c8f",
+	"DocumentNamespace": "https://index.docker.io/v2/library/nginx/blobs",
+	"LicenseListVersion": 3.8,
+	"creationInfo":
+		{
+			"creator": "tool",
+			"created": "2020-07-06T23:49:08Z",
+			"relationships":
+				{
+					"relationshipType": "DESCRIBES",
+					"relatedSpdxElement": "SPDXRef-0efad4d09a419dc6d574c3c3baacb804a530acd61d5eba72cb1f14e1f5ac0c8f"
+				}
+		},
+	"packages":
+		{
+			"packageName": "nginx",
+			"SPDXID": "SPDXRef-0efad4d09a419dc6d574c3c3baacb804a530acd61d5eba72cb1f14e1f5ac0c8f",
+			"packageVersion": "1.19.0",
+			"packageDownloadLocation": "https://index.docker.io/v2/library/nginx/blobs/0efad4d09a419dc6d574c3c3baacb804a530acd61d5eba72cb1f14e1f5ac0c8f",
+			"filesAnalyzed": "false",
+			"PackageLicenseDeclared": "NOASSERTION",
+			"PackageLicenseConcluded": "NOASSERTION",
+			"PackageCopyrightText": "NOASSERTION"
+		}
+}

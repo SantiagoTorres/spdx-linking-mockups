@@ -28,3 +28,4 @@ The tool that generates the SBoM is also expected to calculate the digest and st
 - Content addressable artifacts are identified based on digests. an SBoM document cannot refer to itself in this case because changing the content of the SBoM changes the digest and hence the name of the document. An SBoM document can refer to other SBoM documents only after it has been generated and its digest is calculated. 
 - The download location is the same for the image and the artifacts. How do we say "this SBoM describes this blob which was downloaded from the same endpoint as the SBoM"?
 - How do we create external document references?
+- SPDXRefs can be used to identify the blobs but only if the digests are expressed in full.
