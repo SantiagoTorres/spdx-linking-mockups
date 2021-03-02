@@ -1,0 +1,11 @@
+digraph {
+  jaeger -> "jaeger-collector"[label="CONTAINS"];
+  jaeger -> "jaeger-query"[label="CONTAINS"];
+  jaeger -> "jaeger-agent"[label="CONTAINS"];
+  jaeger -> "cassandra"[label="CONTAINS"];
+  jaeger -> "cassandra-schema"[label="CONTAINS"];
+  "jaeger-collector" -> "cassandra-schema"[label="DEPENDS_ON"];
+  "jaeger-query" -> "cassandra-schema"[label="DEPENDS_ON"];
+  "jaeger-agent" -> "jaeger-collector"[label="DEPENDS_ON"];
+  "cassandra-schema" -> "cassandra"[label="DEPENDS_ON"];
+}

@@ -1,0 +1,35 @@
+digraph {
+	rankdir=LR;
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "cloud.google.com/go"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/Azure/azure-sdk-for-go"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/Azure/go-autorest/autorest"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/Azure/go-autorest/autorest/adal"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/Azure/go-autorest/autorest/date"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/Azure/go-autorest/autorest/to"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/aws/aws-sdk-go"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/digitalocean/godo"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/ghodss/yaml"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/golang/mock"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/jmespath/go-jmespath"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/json-iterator/go"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/pkg/errors"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/satori/go.uuid"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/spf13/pflag"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "github.com/stretchr/testify"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "golang.org/x/crypto"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "golang.org/x/oauth2"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "google.golang.org/api"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "gopkg.in/gcfg.v1"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "gopkg.in/yaml.v2"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/api"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/apimachinery"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/apiserver"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/client-go"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/cloud-provider"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/component-base"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/component-helpers"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/klog/v2"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/kubernetes"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/legacy-cloud-providers"[label="DEPENDS"];
+	"github.com/kubernetes/autoscaler/cluster-autoscaler" -> "k8s.io/utils"[label="DEPENDS"];
+}

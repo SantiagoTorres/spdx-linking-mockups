@@ -1,0 +1,5 @@
+digraph {
+  "cluster-autoscaler:v1.17.2" -> distroless[label="CONTAINS"];
+  "cluster-autoscaler:v1.17.2" -> "cluster-autoscaler"[label="CONTAINS"];
+  "cluster-autoscaler" -> distroless[label="HAS_PREREQUISITE"];
+}

@@ -1,0 +1,10 @@
+digraph {
+  rankdir=LR;
+  distroless[label="DocumentRef-distroless-static"];
+  base[label="DocumentRef-debian-basefiles"];
+  netbase[label="DocumentRef-debian-netbase"];
+  tzdata[label="DocumentRef-debian-timezones"];
+  distroless -> base[label="CONTAINS"];
+  distroless -> netbase[label="CONTAINS"];
+  distroless -> tzdata[label="CONTAINS"];
+}
